@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Centered Form UI</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            font-weight: bold;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button[type="reset"] {
+            background-color: #f44336;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Registration Form</h2>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="077-1234567">
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="appt">Appointment Time:</label>
+        <input type="time" id="appt" name="appt">
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male" style="display:inline;">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female" style="display:inline;">Female</label>
+
+        <label>Skills:</label>
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html" style="display:inline;">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="CSS">
+        <label for="css" style="display:inline;">CSS</label>
+        <input type="checkbox" id="js" name="skills" value="JavaScript">
+        <label for="js" style="display:inline;">JavaScript</label>
+
+        <label for="experience">Experience (1–10):</label>
+        <input type="range" id="experience" name="experience" min="1" max="10">
+
+        <label for="website">Your Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com">
+
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search">
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">--Select--</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+        </select>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" cols="40"></textarea>
+
+        <label for="resume">Upload Your Resume:</label>
+        <input type="file" id="resume" name="resume">
+
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+    </form>
+
+</body>
+</html>

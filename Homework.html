@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full HTML Form Example</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="077-1234567"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="appt">Appointment Time:</label><br>
+        <input type="time" id="appt" name="appt"><br><br>
+
+        <label for="color">Favorite Color:</label><br>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="skills" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="js" name="skills" value="JavaScript">
+        <label for="js">JavaScript</label><br><br>
+
+        <label for="experience">Experience (1–10):</label><br>
+        <input type="range" id="experience" name="experience" min="1" max="10"><br><br>
+
+        <label for="website">Your Website:</label><br>
+        <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+
+        <label for="search">Search:</label><br>
+        <input type="search" id="search" name="search"><br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="">--Select--</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+        </select><br><br>
+
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="40"></textarea><br><br>
+
+        <label for="resume">Upload Your Resume:</label><br>
+        <input type="file" id="resume" name="resume"><br><br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+    </form>
+</body>
+</html>

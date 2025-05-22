@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Feedback Form</title>
+</head>
+<body>
+    <h1>Website Feedback Form</h1>
+    
+    <form action="#" method="POST">
+        <!-- Full Name -->
+        <label for="fullName">Full Name *</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <!-- Email Address -->
+        <label for="email">Email Address *</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Rate Your Experience -->
+        <label>Rate Your Experience *</label><br>
+        <input type="radio" id="excellent" name="experience" value="excellent" required>
+        <label for="excellent">Excellent</label><br>
+        <input type="radio" id="good" name="experience" value="good">
+        <label for="good">Good</label><br>
+        <input type="radio" id="average" name="experience" value="average">
+        <label for="average">Average</label><br>
+        <input type="radio" id="poor" name="experience" value="poor">
+        <label for="poor">Poor</label><br><br>
+
+        <!-- Which features did you like -->
+        <label>Which features did you like?</label><br>
+        <input type="checkbox" id="design" name="features" value="design">
+        <label for="design">Design</label><br>
+        <input type="checkbox" id="speed" name="features" value="speed">
+        <label for="speed">Speed</label><br>
+        <input type="checkbox" id="content" name="features" value="content">
+        <label for="content">Content</label><br>
+        <input type="checkbox" id="usability" name="features" value="usability">
+        <label for="usability">Usability</label><br><br>
+
+        <!-- How did you hear about us -->
+        <label for="hearAbout">How did you hear about us?</label><br>
+        <select id="hearAbout" name="hearAbout">
+            <option value="">Please select...</option>
+            <option value="social-media">Social Media</option>
+            <option value="friend">Friend</option>
+            <option value="search-engine">Search Engine</option>
+            <option value="advertisement">Advertisement</option>
+        </select><br><br>
+
+        <!-- Comments/Suggestions -->
+        <label for="comments">Comments / Suggestions (Optional)</label><br>
+        <textarea id="comments" name="comments" maxlength="300" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Would you recommend us -->
+        <label for="recommend">Would you recommend us?</label><br>
+        <select id="recommend" name="recommend">
+            <option value="">Please select...</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <!-- Submit and Reset buttons -->
+        <input type="submit" value="Submit Feedback">
+        <input type="reset" value="Reset Form">
+    </form>
+</body>
+</html>
